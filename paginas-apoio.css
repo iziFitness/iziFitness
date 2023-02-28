@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  line-height: 150%;
+}
+
+section {
+  margin: auto;  
+  
+}
+
+.logo-img {
+  content: url(./assets/logo-branco-mobile.png);
+  min-width: 50px;
+  width: calc(25vw * .75 );
+  max-width: 200px;
+  margin-top: 35px;
+}
+
+.body-color {
+  background-color: #6320ee;
+}
+
+.head-text {
+  text-align: center;
+  background: rgb(99,32,238);
+  background: linear-gradient(0deg, rgba(99,32,238,1) 5%, rgba(149,98,255,1) 100%);
+  padding-bottom: 150px;
+  margin-bottom: -130px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.termos-titulo {
+  font-size: 2.3em;
+  font-weight: 700;
+  color: white;
+  margin-bottom: -10px;
+}
+
+.termos-descricao {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .logo-img {
+    max-width: 150px;
+  }
+  
+  .termos-titulo {
+    font-size: 1.8em;
+  }
+
+  .termos-descricao {
+    font-size: .9em;
+    font-weight: 500;
+    color: white;
+  }
+
+  strong {
+  }
+
+  p ul li {
+    font-size: .8em;
+  }
+
+}
+
+/* corpo */
+
+.body-text {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+  padding: 50px;
+  text-align: left;
+}
+
+ul {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 30px;  
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+strong {
+  color: #6320ee;
+  font-size: 1em;
+}
+
+.texto-copyright {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  text-align: center;
+  color: #b38cff;
+  margin: 40px;
+}
