@@ -74,7 +74,7 @@ h3 {
   width: calc(12vw * .75 );
   max-width: 100px;
   margin-top: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .headline-img {
@@ -85,8 +85,9 @@ h3 {
 }
 
 .video-div {
-  --videow: 85vw;
-  --videomw: 750px;
+  margin-bottom: 20px;
+  /* --videow: 85vw;
+  --videomw: 750px; */
 }
 
 .video {  /* já está responsivo */
@@ -350,6 +351,7 @@ h3 {
   text-align: left;
   color: #070707;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .details {
@@ -448,10 +450,18 @@ h3 {
 
 @media (min-width: 450px) {
 
+  .button01{
+    font-size: 18px;
+  }
+
   .headline-img {
     content: url(./assets/headline.png);
   }
   
+  .button01 {
+    font-size: 22px;
+  }
+
   .gentefeia-img {
     width: 70vw;
     max-width: 350px;
@@ -514,10 +524,6 @@ h3 {
   .mockup-bonus {
     content: url(./assets/mockup-bonus.png);
     width: 450px;
-  }
-
-  .button01 {
-    font-size: 22px;
   }
 
   .dflex-footer {
