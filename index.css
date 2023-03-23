@@ -1,0 +1,566 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+html, body, div {
+  /* background-color: #f5f5f5; */
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  color: #070707;
+}
+
+/* h0, h1, h2, h3, h4, h5, h6, p {
+  
+} */
+
+p {
+  line-height: 150%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  line-height: 130%;
+  font-size: 22px;
+  text-align: center;
+  color: #5c25c9;
+}
+
+h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: left;
+  font-size: 20px;
+  margin: 20px;
+  color: #5c25c9;
+}
+
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+/* header classes */
+
+.header {
+  background: linear-gradient(160deg, #350b8a 20%, #6320ee 100%);
+  padding-top: -50px;
+  margin-bottom: 10px;
+}
+
+.logo-img {
+  content: url(./assets/logo-branco-mobile.png);
+  opacity: 50%;
+  min-width: 50px;
+  width: calc(12vw * .75 );
+  max-width: 100px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+
+.headline-img {
+  content: url(./assets/headline-mobile.png);
+  width: 90vw;
+  max-width: 500px;
+  margin-bottom: 25px;
+}
+
+.video-div {
+  margin-bottom: 20px;
+  /* --videow: 85vw;
+  --videomw: 750px; */
+}
+
+.video {  /* já está responsivo */
+  width: var(--videow);
+  max-width: var(--videomw);
+  height: calc(var(--videow) * 0.5625);  
+  max-height: calc(var(--videomw) * 0.5625);
+  margin-bottom: 30px;
+}
+
+
+/* botões */
+
+.button01 {
+  align-items: center;
+  appearance: none;
+  background-color: #ffc400;
+  border-radius: 5px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#cc9c00 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #0f0f0f;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Open Sans", sans-serif;
+  height: 60px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 20px;
+  margin-bottom: 30px;
+  width: 90vw;
+}
+
+.button01:focus {
+  box-shadow: #cc9c00 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button01:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #cc9c00 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button01:active {
+  box-shadow: #cc9c00 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+/* content classes */
+
+.content {
+
+}
+
+.container {
+}
+
+
+/* formatação texto */
+
+.texto1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: left;
+}
+
+.texto1-branco {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+
+.h1-branco {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.textspace {
+  padding-top: 10px;
+}
+
+
+/* display flex e limitações */
+
+.spacing{
+  content: url(./assets/spacing.png);
+  text-align: center;
+}
+
+.dflex-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dflex-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dflex-footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 850px;
+}
+
+.text-box {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: auto;
+  max-width: 850px;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.headline-background {
+  background: linear-gradient(150deg, #3a0b98 20%, #6a31db 100%);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* 
+.content-img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  width: 95%;
+} */
+
+.garantia {
+  content: url(./assets/garantia15.png);
+  width: 240px;
+  margin-bottom: -100px;
+}
+
+.garantia-texto {
+  padding-top: 120px;
+  margin-bottom: 30px;
+}
+
+/* foto de gente feia */
+
+.dflex-gente-feia { 
+  margin: auto;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.gentefeia-img {  
+  margin: 20px;
+  width: 80vw;  
+  border-radius: 5px;
+}
+
+.titulo-depoimentos {
+  text-align: left;
+}
+
+
+/* oferta e bônus */
+
+.dflex-oferta {
+  display: flex;
+  flex-direction: column;
+}
+
+.oferta-mobile {
+  display: contents;
+}
+
+.oferta-desk {
+  margin: auto;
+  display: none;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+.mockup-bonus {
+  content: url(./assets/mockup-bonus-mobile.png);
+  width: 80vw;
+  margin-top: 30px;
+}
+
+.titulo-bonus {
+  font-size: 24px;
+  text-align: left;
+  margin-top: 60px;
+}
+
+.titulo-bonus-bold {
+  font-size: 28px;
+}
+
+.mockup-oferta {
+  content: url(./assets/mockup-tablet-oferta-mobile.png);
+  width: 75vw;
+  margin-top: -65px;
+  position: absolute;
+}
+
+.background-oferta {
+  background: rgb(58,11,152);
+  background: linear-gradient(30deg, rgba(58,11,152,1) -25%, rgba(64,188,216,1) 150%);
+  width: 100%;
+  height: 300px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.preço-oferta {
+  content: url(./assets/preço-oferta.png);
+  width: 90vw;
+  margin-bottom: 20px;
+  margin-top: 60px;
+}
+    /* otimização desktop oferta */
+
+.oferta-preco-desk {  
+  content: url(./assets/oferta-desktop.png);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+/* FAQ */
+
+.FAQ {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  line-height: 130%;
+  font-size: 16px;
+  text-align: left;
+  color: #070707;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.details {
+  padding: 0px;
+}
+
+.summary {
+  padding: 15px;  
+  border-bottom: 1px solid #d6d6d6;  
+  cursor: pointer;
+}
+
+.summary:hover {
+  color: #5c25c9;
+  background-color: rgba(156, 107, 255, 0.1);
+}
+
+.summary::marker {
+  content: url(./assets/faq-icon.svg);
+}
+
+.answer {
+  padding: 15px 15px 25px 30px;
+  color: #070707;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+  background-color: #f0f0f0;
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* Footer */
+
+.main-footer {
+  /* height: 300px; */
+  margin-top: 80px;
+  padding: 25px 25px 50px 25px;
+  background: linear-gradient(160deg, #350b8a 20%, #5c25c9 100%);
+}
+
+.logo-footer {
+  content: url(./assets/logo-branco-mobile.png);
+  opacity: 50%;
+  min-width: 50px;
+  width: 70px;
+  max-width: 100px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.titulo-pirataria {
+  margin-top: 30px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+  color: #b38cff;
+}
+
+.texto-pirataria {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: justify;  
+  line-height: 1.2rem;
+  color: #b38cff;
+}
+
+.texto-disclaimer {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: justify;  
+  line-height: 1.2rem;
+  color: #b38cff;
+  margin-top: 20px;
+  max-width: 850px;
+}
+
+.dflex-paginas-politicas {
+  display: flex;  
+  align-items: center;
+  flex-direction: row;
+}
+
+.link-paginas-politicas {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #b38cff;
+  margin: 10px 15px 10px 15px;
+}
+
+/* Media Query */
+
+@media (min-width: 450px) {
+
+  .button01{
+    font-size: 18px;
+  }
+
+  .headline-img {
+    content: url(./assets/headline.png);
+  }
+  
+  .button01 {
+    font-size: 22px;
+  }
+
+  .gentefeia-img {
+    width: 70vw;
+    max-width: 350px;
+  }
+
+  .titulo-depoimentos {
+    text-align: center;
+  }
+  
+  .garantia-texto {
+    width: 85vw;
+  }
+
+  .mockup-bonus {
+    width: 80vw;
+  }
+
+  .mockup-oferta {
+    width: 70vw;
+    max-width: 360px;
+  }
+
+  .background-oferta {
+    width: 100%;
+    height: 250px;
+    margin-top: 200px;
+  }
+  
+  .preço-oferta {
+    width: 70vw;    
+    max-width: 360px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+  }
+
+  .button01 {
+    width: 75vw;
+    height: 70px;
+  }
+
+}
+
+@media (min-width: 750px) {
+
+  .gentefeia-img {
+    width: 300px;
+  }
+  
+  .garantia {
+    width: 260px;
+    margin-bottom: -100px;
+  }
+  
+  .garantia-texto {
+    width: 70vw;
+    padding-top: 120px;
+    margin-bottom: 30px;
+  }
+
+  .mockup-bonus {
+    content: url(./assets/mockup-bonus.png);
+    width: 450px;
+  }
+
+  .dflex-footer {
+    display: flex;
+    flex-direction: row;
+    max-width: 850px;
+  }
+
+}
+
+
+@media (min-width: 950px) {
+  .gentefeia-img {
+    width: 300px;
+  }
+
+  .garantia-texto {
+    width: 40vw;
+  }
+
+  .mockup-bonus {
+    content: url(./assets/mockup-bonus.png);
+    width: 500px;
+  }
+
+  .button01 {
+    width: 700px;
+    height: 70px;
+    font-size: 24px;
+  }
+
+  .oferta-mobile {
+    display: none;
+  }
+  
+  .oferta-desk {
+    display: contents;
+  }
+
+}
